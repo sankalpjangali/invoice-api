@@ -1,5 +1,5 @@
 const { error } = require("console");
-
+const user=require("../model/users")
 async function starturl(req, res) {
   res.json({
     success: true,

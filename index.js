@@ -3,7 +3,7 @@ const routeurl=require("./route/routers.js")
 const bodyparser=require("body-parser")
 const connectomongoose=require("./connection.js")
 const app=express()
-connectomongoose()
+connectomongoose("mongodb://localhost:27017/user")
 app.use(bodyparser.json());
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
